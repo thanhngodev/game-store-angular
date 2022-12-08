@@ -1,0 +1,30 @@
+<div class="search-container">
+  <div class="left" routerLink="/">
+    <img class="left-icon" src="../../assets/images/icon.webp" alt=""/>
+    <span class="logo">
+      Game Store
+    </span>
+  </div>
+  <div class="center">
+    <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <input
+        class="search-input"
+        name="search"
+        ngModel
+        placeholder="Search 500,000+ games"
+      />
+      <button class="search-button">Search</button>
+    </form>
+  </div>
+  <div class="right">
+    <div class="icon">
+      <img class="image" src="../../assets/images/setting.png" alt="" />
+    </div>
+    <div class="icon">
+      <img class="image" src="../../assets/images/bell.png" alt="" />
+    </div>
+    <div class="icon">
+      <img class="image" src="../../assets/images/user.png" alt="" />
+    </div>
+  </div>
+</div>
